@@ -1,13 +1,8 @@
 # dl-3001
 
 # EEG Spectrogram Generation and Denoising
+ **`generate_spectrograms.py`**:This file contains Python code for generating spectrograms from EEG (Electroencephalogram) data and implementing denoising techniques. Spectrograms provide visual representations of the frequency content of EEG signals over time, aiding in the analysis of brain activity patterns.
 
-This repository contains Python code for generating spectrograms from EEG (Electroencephalogram) data and implementing denoising techniques. Spectrograms provide visual representations of the frequency content of EEG signals over time, aiding in the analysis of brain activity patterns.
-
-## Files
-
-- **`generate_spectrograms.py`**: Python script containing the code for generating spectrograms.
-- **`README.md`**: This file providing an overview of the repository and instructions for usage.
 
 ## Overview
 
