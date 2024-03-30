@@ -107,4 +107,12 @@ The `models.ipynb` notebook includes code for training a CNN model on EEG spectr
 4. **Analysis and Interpretation**:
    - Model predictions and Grad-CAM visualizations are analyzed to understand how the model identifies EEG activity patterns.
    - Spectrogram images with overlaid Grad-CAM contours are displayed, facilitating interpretation of model predictions.
+  
+ ## Acknowledgments
 
+The code in this repository builds upon and references the following Kaggle resources:
+
+- [HMS Harmful Brain Activity Classification Discussion](https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification/discussion/472976)
+- [HMS EDA and Domain Journey](https://www.kaggle.com/code/mvvppp/hms-eda-and-domain-journey) 
+- [HMS Inference LB 0.41](https://www.kaggle.com/code/andreasbis/hms-inference-lb-0-41)
+- [Grad-CAM: What is important in Spectrograms](https://www.kaggle.com/code/cdeotte/grad-cam-what-is-important-in-spectrograms) 
