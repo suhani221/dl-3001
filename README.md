@@ -2,7 +2,7 @@
 
 # EEG Spectrogram Conversion
 
- **`parquet-npy.ipynb`**:This repository contains Python code for converting spectrograms from Parquet format to NumPy arrays (.npy). Converting spectrograms to NumPy arrays enables faster loading and processing, significantly reducing reading time.
+ **`parquet-npy.ipynb`**:This file contains Python code for converting spectrograms from Parquet format to NumPy arrays (.npy). Converting spectrograms to NumPy arrays enables faster loading and processing, significantly reducing reading time.
 
 
 ## Overview
@@ -48,3 +48,31 @@ The `eeg-spectogram.ipynb` script processes EEG data stored in Parquet format, d
 4. **Visualization and Storage**:
    - Optionally, a subset of generated spectrograms along with their corresponding EEG signals can be displayed for visual inspection.
    - Generated spectrograms are saved as numpy arrays (.npy files) for future reference or further analysis.
+     
+# EEG Spectrogram Analysis
+
+ **`models.ipynb`**:This file contains Python code for analyzing EEG spectrograms using Convolutional Neural Networks (CNNs) and Grad-CAM (Gradient-weighted Class Activation Mapping) visualization technique. The analysis involves training a CNN model on EEG spectrogram data and using Grad-CAM to interpret the model's predictions.
+
+
+## Overview
+
+The `models.ipynb` notebook includes code for training a CNN model on EEG spectrogram data, predicting EEG activity classes, and visualizing model predictions using Grad-CAM. Grad-CAM generates heatmap visualizations that highlight the regions of EEG spectrograms crucial for predicting specific brain activity classes.
+
+## How it Works
+
+1. **Data Preparation**:
+   - EEG spectrogram data is loaded from Parquet files.
+   - Spectrogram data is preprocessed and formatted for input to the CNN model.
+
+2. **CNN Model Building**:
+   - A CNN model architecture, based on the EfficientNetB0 model, is defined for predicting EEG activity classes.
+   - The model is trained using EEG spectrogram data with corresponding activity class labels.
+
+3. **Grad-CAM Visualization**:
+   - Grad-CAM is applied to the trained CNN model to generate heatmap visualizations highlighting regions of interest in EEG spectrograms.
+   - Heatmaps indicate areas crucial for predicting specific brain activity classes, providing insights into the model's decision-making process.
+
+4. **Analysis and Interpretation**:
+   - Model predictions and Grad-CAM visualizations are analyzed to understand how the model identifies EEG activity patterns.
+   - Spectrogram images with overlaid Grad-CAM contours are displayed, facilitating interpretation of model predictions.
+
