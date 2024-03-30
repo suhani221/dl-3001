@@ -1,5 +1,37 @@
 # dl-3001
 
+# EEG Spectrogram Data Analysis
+
+ **`EDA.ipynb`**:This file contains Python code for analyzing EEG spectrogram data, including exploratory data analysis (EDA) and visualization of EEG samples and spectrograms. 
+
+
+
+## Overview
+
+The `EDA.ipynb` notebook includes code for exploring and visualizing EEG spectrogram data. It covers various aspects of the dataset, including EEG recordings, spectrogram samples, and target variable distributions.
+
+## How it Works
+
+1. **Data Loading**:
+   - EEG spectrogram data is loaded from Parquet files.
+   - The dataset comprises EEG recordings with corresponding spectrograms and target labels.
+
+2. **Exploratory Data Analysis (EDA)**:
+   - Data statistics, such as the number of patients, unique EEG IDs, and distribution of target variables, are analyzed.
+   - Visualizations, including histograms and bar plots, are generated to understand the dataset's characteristics and target variable distributions.
+
+3. **EEG Sample Visualization**:
+   - EEG samples are visualized as time-series plots, showing electrical activity recorded by individual electrodes over time.
+   - Each EEG sample represents a 50-second recording of brain activity, with 20 electrodes capturing neural dynamics.
+
+4. **Spectrogram Visualization**:
+   - Spectrogram samples are visualized as heatmaps, displaying frequency-domain representations of EEG signals.
+   - The spectrograms are divided into four regions (LL, RL, RP, LP), each representing specific electrode configurations.
+
+5. **Analysis and Interpretation**:
+   - The notebook provides insights into the dataset's characteristics, including the distribution of EEG recordings, spectrograms, and target variables.
+   - Visualizations aid in understanding EEG and spectrogram data, facilitating further analysis and modeling.
+
 # EEG Spectrogram Conversion
 
  **`parquet-npy.ipynb`**:This file contains Python code for converting spectrograms from Parquet format to NumPy arrays (.npy). Converting spectrograms to NumPy arrays enables faster loading and processing, significantly reducing reading time.
