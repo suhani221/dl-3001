@@ -1,12 +1,35 @@
 # dl-3001
 
-# EEG Spectrogram Generation and Denoising
- **`generate_spectrograms.py`**:This file contains Python code for generating spectrograms from EEG (Electroencephalogram) data and implementing denoising techniques. Spectrograms provide visual representations of the frequency content of EEG signals over time, aiding in the analysis of brain activity patterns.
+# EEG Spectrogram Conversion
+
+ **`parquet-npy.ipynb`**:This repository contains Python code for converting spectrograms from Parquet format to NumPy arrays (.npy). Converting spectrograms to NumPy arrays enables faster loading and processing, significantly reducing reading time.
 
 
 ## Overview
 
-The `generate_spectrograms.py` script processes EEG data stored in Parquet format, denoises the signals using wavelet transformation, and generates spectrograms using the Librosa library. Spectrograms are computed for different combinations of EEG channels and aggregated to create comprehensive visual representations of brain activity.
+The `parquet-npy.ipynb` script converts spectrograms stored in Parquet format to NumPy arrays. This conversion facilitates faster loading and processing of spectrogram data, enhancing the efficiency of subsequent analyses.
+
+## How it Works
+
+1. **Spectrogram Retrieval**:
+   - Spectrograms are loaded from Parquet files stored in the specified directory.
+
+2. **Conversion**:
+   - The loaded spectrograms are converted to NumPy arrays using the `np.load()` function.
+   - Optionally, the script can read Parquet files directly and convert them to NumPy arrays if `READ_SPEC_FILES` is set to `True`.
+
+3. **Output**:
+   - Converted spectrograms are saved as NumPy arrays (.npy files) for future use.
+   - The saved arrays can be loaded much faster compared to Parquet files, reducing reading time.
+
+
+# EEG Spectrogram Generation and Denoising
+ **`eeg-spectogram.ipynb`**:This file contains Python code for generating spectrograms from EEG (Electroencephalogram) data and implementing denoising techniques. Spectrograms provide visual representations of the frequency content of EEG signals over time, aiding in the analysis of brain activity patterns.
+
+
+## Overview
+
+The `eeg-spectogram.ipynb` script processes EEG data stored in Parquet format, denoises the signals using wavelet transformation, and generates spectrograms using the Librosa library. Spectrograms are computed for different combinations of EEG channels and aggregated to create comprehensive visual representations of brain activity.
 
 ## How it Works
 
